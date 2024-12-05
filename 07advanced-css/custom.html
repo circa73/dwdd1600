@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="description" content="Simple hand-coded HTML page for DWDD-1600 course">
+        <meta name="author" content="Henry Quintana">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="livery.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:opsz,wght@8..60,200..900&display=swap" rel="stylesheet">
+        <title>Tiny Midget Wizards: Custom</title>
+    </head>
+    <body>
+        <!-- page header -->
+        <header>
+            <img src="images/logo.png" alt="site logo" width="100" height="58">  
+            <div>
+                <h1>Tiny Midget Wizards</h1>
+                <p> ...because everyone knows they're what make technology work.</p>               
+            </div>
+        </header>
+        <!-- page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Bicycles</a></li>
+                <li><a href="frames.html">Frames</a></li>
+                <li><a href="racing.html">Racing</a></li>
+                <li class="active"><a href="custom.html">Custom</a></li>
+            </ul>
+        </nav>
+        <!-- main content -->
+        <main>
+            <h1>Custom Frame Order</h1>
+            <form method="get" class="order" action="thanks.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>First Name *<input type="text" name="fname" required></label>
+                    <label>Last Name *<input type="text" name="lname" required></label>
+                    <label>Phone Number *<input type="tel" name="phone" required></label>
+                    <label>Email *<input type="email" name="email" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Frame Material</legend>
+                    <label><input type="radio" name="material" value="drone">Steel ($2500)</label>
+                    <label><input type="radio" name="material" value="drone">Aluminum ($2000)</label>
+                    <label><input type="radio" name="material" value="drone">Titanium ($4000)</label>
+                    <label><input type="radio" name="material" value="drone">Carbon Fiber ($5000)</label>  
+                </fieldset>
+
+                <fieldset>
+                    <label>Frame Size
+                        <textarea name="comments">Please provide desired frame size in cm</textarea>
+                    </label>
+                </fieldset>
+               
+                <fieldset>
+                    <legend>Delivery Address</legend>
+                    <label>Street Address *<input type="text" name="street" required></label>
+                    <label>City *<input type="text" name="city" required></label>
+                    <label>State *<input type="text" name="state" required></label>
+                    <label>Zip Code *<input type="text" name="zip" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Shipping Options</legend>
+                    <label><input type="checkbox" name="UPS" value="chosen">UPS</label>
+                    <label><input type="checkbox" name="FedEx" value="chosen">Fed Ex</label>
+                    <label><input type="checkbox" name="USPS" value="chosen">USPS</label>
+                    <label>Shipment Speed
+                        <select name="time">
+                            <option value="none">Please Select</option>
+                            <option value="ground">1-2 Weeks ($50)</option>
+                            <option value="standard">3-5 Days ($100)</option>
+                            <option value="2day">2 Days ($150)</option>
+                            <option value="overnight">Overnight ($200)</option>
+                        </select>
+                    </label>  
+                </fieldset>
+
+                <input type="submit" value="Order Custom Frame">
+
+            </form>
+        </main>
+        <!-- page footer-->
+        <footer>
+            <p>&copy; 2024 &bull; Henry Quintana &bull; <a href="mailto:10850121@uvu.edu">ask me anything</a>
+            </p>
+        </footer>
+
+    </body>
+</html>
