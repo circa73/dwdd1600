@@ -1,0 +1,161 @@
+
+/* body section style */
+
+body {
+        font-family: "Source Serif 4", serif;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0;                
+}
+
+/* header section style */
+
+header {
+        font-family: "Noto Sans", sans-serif;
+        padding: 1rem 2vw;   
+    }
+    header h1 {
+        font-weight: 400;
+        margin: 0;
+        color: #000;
+    }
+    header p {
+        margin: 0;
+        color: #000;
+        font-size: 12px;
+        letter-spacing: .2px;
+    }
+
+
+/* nav section style */
+ 
+nav {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #000;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    display: block;
+    padding: 0.83rem 2rem;
+}
+nav li.active a {
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 0%;
+}
+nav a:hover {
+    color: goldenrod;
+}
+
+/* main section style */
+
+main {
+    padding: 1rem 2vw;
+    /* this seems to generate a lighthouse warning not present in the similar follow-along */
+}
+main h1 {
+    color: #000;
+}
+main h2 {
+    color: #000;
+    margin-bottom: .1rem;
+}
+main p {
+    color: #000;
+    /* margin-bottom: 1rem; */
+    /* margin: 0rem 1rem; */
+    /* removed due to lighthouse warning not present in the similar follow-along style sheet*/
+}
+main ul {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+    width: 15rem;
+}
+main ul {
+    list-style-type: none;
+}
+main ul li{
+    line-height: 150%;
+    margin: .15rem;
+    font-size: 1rem;
+}    
+main ol {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+    list-style-type: decimal-leading-zero;
+    width: 15rem;
+}
+main dl dt{
+    font-weight: 400;
+}
+main dl dd{
+    margin-top: .25rem;
+    margin-bottom: .5rem;
+}
+main address{
+    font-style: normal;
+    line-height: 150%;
+    margin-left: 1rem;
+    padding: .5rem;
+    width: 10rem;
+    border: 1px solid #000;
+    border-radius: .2rem;
+}
+main a:hover{
+    color: rgb(15, 174, 65);
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption{
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+    color: #000;
+}
+
+/* footer section style */
+
+footer{
+    border-top: 1px solid #000;
+    margin-left: 2rem;
+    font-size: .75rem;
+    text-align: left;
+    clear: both;
+}
+
+/* end style */
