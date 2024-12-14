@@ -176,7 +176,7 @@ main dl dd{
 main address{
     font-style: normal;
     line-height: 150%;
-    margin-left: 0rem;
+    margin-left: 2rem;
     padding: .5rem;
     width: 14rem;
     border: 1px solid #D9AF8B;
@@ -258,8 +258,8 @@ div.gallery img:hover {
 }
 
 .order textarea {
-    height: 3rem;
-    width: 30rem;
+    height: 5rem;
+    width: 50rem;
 }
 
 .order [type=text], .order [type=tel], .order [type=email], .order select, .order textarea {
