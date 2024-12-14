@@ -130,7 +130,16 @@ main h1 {
 
 main h2 {
     color: #73462D;
+    margin-top: 3rem;
     margin-bottom: .1rem;
+    background-color: #D9AF8B;
+    border: 2px solid #F2BE7E;
+}
+
+main h3 {
+    color: #73462D;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
 }
 
 main p {
@@ -185,24 +194,35 @@ main address{
 }
 
 main a:hover{
-    color: rgb(15, 174, 65);
+    color: #BFA145;
 }
 
-figure.wrapped {
+figure.tour {
     width: 30%;
     margin: 0 0 1% 2%;
     float: right;
 }
 
-figure.wrapped img {
+figure.tour img {
     width: 100%;
     height: auto;
 }
 
-figure.wrapped figcaption {
+figure.tour figcaption {
     text-align: center;
     color: #73462D;
     font-size: .85rem;
+}
+
+figure.package {
+    width: 30%;
+    margin: 2%;
+    float: left;
+}
+
+figure.package img {
+    width: 100%;
+    height: auto;
 }
 
 div.gallery {
@@ -239,31 +259,31 @@ div.gallery img:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .75);
 }
 
-.order fieldset {
+.package fieldset {
     border: 1px solid #F2BE7E;
     margin-bottom: 1rem;
 }
 
-.order legend {
+.package legend {
     color: #73462D;
     font-size:small;
 }
 
-.order label{
+.package label{
     margin: .3rem;
 }
 
-.order label, .order select, .order [type=text], .order [type=tel], .order [type=email], .order textarea {
+.package label, .package select, .package [type=text], .package [type=tel], .package [type=email], .package textarea {
     display: block;
     color: #73462D;
 }
 
-.order textarea {
+.package textarea {
     height: 5rem;
     width: 50rem;
 }
 
-.order [type=text], .order [type=tel], .order [type=email], .order select, .order textarea {
+.package [type=text], .package [type=tel], .package [type=email], .package select, .package textarea {
     border: solid 1px #F2BE7E;
     border-radius: .1rem;
     padding: .25rem;
@@ -273,13 +293,7 @@ div.gallery img:hover {
     color: #73462D;
 }
 
-/* removed for clarity
-.order :required {
-    background-color: rgba(200,200,200,0.2);
-}
-*/
-
-.order [type=submit] {
+.package [type=submit] {
     background-color: #73462D;
     border: solid 2px #D9AF8B;
     border-radius: .25rem;
@@ -288,34 +302,6 @@ div.gallery img:hover {
     font-weight: 700;
     margin: 1rem 0 0 1vw;
 }
-
-/*
-table.routes {
-    font-family: "Noto Sans", sans-serif;
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table.routes th {
-    background-color: black;
-    color: white;
-    padding: .5rem 2vw;
-    text-align: left;
-}
-
-table.routes td {
-    padding: .4rem 2vw;
-}
-
-table.routes tr:nth-child(odd) {
-    background-color: #eee;
-}
-
-table.routes tr:hover {
-    background-color: rgba(218,165,32,.5);
-}
-*/
-
 
 /* footer section style */
 
