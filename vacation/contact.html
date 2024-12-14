@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="description" content="Simple hand-coded HTML page for DWDD-1600 course">
+        <meta name="author" content="Henry Quintana">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="coffea.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:opsz,wght@8..60,200..900&display=swap" rel="stylesheet">
+        <title>Third-Wave Travel: Home</title>
+    </head>
+    <body>
+        
+        <!-- page header -->
+
+        <header>
+            <img src="images/logo.png" alt="site logo" width="100" height="58">  
+            <div>
+                <h1>Third-Wave Travel</h1>
+                <p>Experience the finest specialty coffees... from bean to cup</p>
+            </div>
+        </header>
+        
+        <!-- page navigation -->
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Coffee Tourism</a></li>
+                <li><a href="destinations.html">Destination Gallery</a></li>
+                <li><a href="packages.html">Travel Packages</a></li>              
+                <li class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <!-- main content -->
+        
+        <main>
+           
+            <h1>Contact Us</h1>
+
+            <form method="get" class="package" action="thanks.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>First Name *<input type="text" name="fname" required></label>
+                    <label>Last Name *<input type="text" name="lname" required></label>
+                    <label>Phone Number *<input type="tel" name="phone" required></label>
+                    <label>Email *<input type="email" name="email" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Travel Package</legend>
+                    <label><input type="radio" name="material" value="alsacia">Colombia</label>
+                    <label><input type="radio" name="material" value="first">Panama</label>
+                    <label><input type="radio" name="material" value="premium">Nicaragua</label>
+                    <label><input type="radio" name="material" value="economy">Costa Rica</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Flight Options</legend>
+                    <label>Class of Service
+                        <select name="time">
+                            <option value="none">Please Select</option>
+                            <option value="first">First Class</option>
+                            <option value="business">Business Class</option>
+                            <option value="premium">Premium / Comfort+</option>
+                            <option value="economy">Main Cabin / Economy</option>
+                        </select>
+                    </label>  
+                </fieldset>
+
+                <fieldset>
+                    <label>Additional Comments
+                        <textarea name="comments">Please add any special itinerary requests or dietary restrictions here.</textarea>
+                    </label>
+                </fieldset>
+
+            <input type="submit" value="Reserve Vacation Package">
+
+            </form>
+
+            <!-- 
+            
+            <h3>Third-Wave Travel</h3>
+
+            <address>
+                800 W University Pkwy<br>
+                Orem, UT 84058<br>
+                <a href="tel:+8005551212">tel. +1 (800) 555-1212</a><br>
+                <a href="mailto:10850121@uvu.edu">travel@third-wave.edu</a>
+            </address>
+
+            <h2>Our Location </h2>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97296.84811286333!2d-111.88317663924057!3d40.35284863559752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9b1eeeb9f5c5%3A0x63523d8413e98aa1!2sUtah%20Valley%20University!5e0!3m2!1sen!2sus!4v1733464512503!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            -->
+            
+        </main>
+
+        <!-- page footer-->
+         
+        <footer>
+            <p>&copy; 2024 &bull; Third-Wave Travel &bull; <a href="mailto:10850121@uvu.edu">travel@third-wave.edu</a>
+            </p>
+        </footer>
+
+    </body>
+</html>

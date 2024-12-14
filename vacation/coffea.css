@@ -1,0 +1,322 @@
+
+/* adjust for browser window sizing */
+
+* {box-sizing: border-box;}
+
+/* body section style */
+
+body {
+    font-family: "Noto Sans", serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;    
+    background-color: #F2F2F2;            
+}
+
+/* header section style */
+
+header {
+    font-family: "Noto Sans", sans-serif;
+    color: #73462D;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+header div {
+    padding-left: 1vw;
+}
+
+header h1 {
+    font-weight: 400;
+    margin: 0;
+    color: #73462D;
+}
+
+header p {
+    margin: 0;
+    color: #73462D;
+    font-size: 12px;
+    letter-spacing: .2px;
+}
+
+/* nav section style */
+
+/* start of media query section */
+
+/* small screen navigation section */
+
+@media only screen and (max-width: 600px) {
+    nav {
+        font-family: "Noto Sans", sans-serif;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 500;
+        text-align: center;
+        border: 1px solid #F2BE7E;
+        background-color: #73462D;
+        color: #FFF;
+    }
+    
+    nav li.active a {
+        background-color: #FFF;
+        background-image: linear-gradient(#D9AF8B, #73462D);
+        color: #FFF;
+    }
+
+    nav a:hover {
+        color: #D9AF8B;
+    }
+} 
+
+/* large screen navigation section */
+
+@media only screen and (min-width: 601px) {
+    nav {
+        font-family: "Noto Sans", sans-serif;
+        background-color: #73462D;
+    }
+
+    nav ul{
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+
+    nav a{
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        display: block;
+        padding: 0.83rem 2rem;
+    }
+
+    nav li.active a {
+        background-color: white;
+        color: #73462D;
+        border: 1px solid #73462D;
+        border-radius: 0%;
+    }
+
+    nav a:hover {
+        color: #F2BE7E;
+    }
+} 
+
+/* end of media query section */
+
+/* main section style */
+
+main {
+    padding: 1rem 2vw;
+    /* this seems to generate a lighthouse warning not present in the similar follow-along */
+}
+
+main h1 {
+    color: #73462D;
+}
+
+main h2 {
+    color: #73462D;
+    margin-top: 3rem;
+    margin-bottom: .1rem;
+    background-color: #D9AF8B;
+    border: 2px solid #F2BE7E;
+}
+
+main h3 {
+    color: #73462D;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+main p {
+    color: #73462D;
+    /* margin-bottom: 1rem; */
+    /* margin: 0rem 1rem; */
+    /* removed due to lighthouse warning not present in the similar follow-along style sheet*/
+}
+
+main ul {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+    width: 15rem;
+}
+
+main ul {
+    list-style-type: none;
+}
+
+main ul li{
+    line-height: 150%;
+    margin: .15rem;
+    font-size: 1rem;
+}    
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+    list-style-type: decimal-leading-zero;
+    width: 15rem;
+}
+
+main dl dt{
+    font-weight: 400;
+    color: #73462D;
+}
+
+main dl dd{
+    margin-top: .25rem;
+    margin-bottom: .5rem;
+}
+
+main address{
+    font-style: normal;
+    line-height: 150%;
+    margin-left: 2rem;
+    padding: .5rem;
+    width: 14rem;
+    border: 1px solid #D9AF8B;
+    border-radius: .2rem;
+    color: #73462D;
+}
+
+main a:hover{
+    color: #BFA145;
+}
+
+figure.tour {
+    width: 30%;
+    margin: 0 0 1% 2%;
+    float: right;
+}
+
+figure.tour img {
+    width: 100%;
+    height: auto;
+}
+
+figure.tour figcaption {
+    text-align: center;
+    color: #73462D;
+    font-size: .85rem;
+}
+
+figure.package {
+    width: 30%;
+    margin: 2%;
+    float: left;
+}
+
+figure.package img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery section {
+    flex-basis: 50%;
+    margin: 1rem 0;
+}
+
+div.gallery img {
+    width: 400px;
+    height: auto;
+    padding: 1vw;
+    background-color: #D9AF8B;
+    border: 2px solid #F2BE7E;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption{
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+    color: #73462D;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .75);
+}
+
+.package fieldset {
+    border: 1px solid #F2BE7E;
+    margin-bottom: 1rem;
+}
+
+.package legend {
+    color: #73462D;
+    font-size:small;
+}
+
+.package label{
+    margin: .3rem;
+}
+
+.package label, .package select, .package [type=text], .package [type=tel], .package [type=email], .package textarea {
+    display: block;
+    color: #73462D;
+}
+
+.package textarea {
+    height: 5rem;
+    width: 50rem;
+}
+
+.package [type=text], .package [type=tel], .package [type=email], .package select, .package textarea {
+    border: solid 1px #F2BE7E;
+    border-radius: .1rem;
+    padding: .25rem;
+    width: 350px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+    color: #73462D;
+}
+
+.package [type=submit] {
+    background-color: #73462D;
+    border: solid 2px #D9AF8B;
+    border-radius: .25rem;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: 700;
+    margin: 1rem 0 0 1vw;
+}
+
+/* footer section style */
+
+footer{
+    border-top: 1px solid #73462D;
+    color: #73462D;
+    margin-left: 2rem;
+    font-size: .75rem;
+    text-align: left;
+    clear: both;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+/* end style */
